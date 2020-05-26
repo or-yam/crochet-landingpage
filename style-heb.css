@@ -1,0 +1,251 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  font-family: 'Balsamiq Sans', cursive;
+  background-color: #fafaf6;
+  color: #272343;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* top nav bar */
+nav {
+  width: 100%;
+}
+h2 {
+  width: 100%;
+  text-align: center;
+}
+.logo {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  justify-content: center;
+}
+.logo img {
+  margin: 5px;
+  width: 8rem;
+  border-radius: 50%;
+}
+
+.lang {
+  display: flex;
+  margin: 15px;
+  list-style: none;
+}
+.lang li {
+  margin: 10px;
+  margin-bottom: 0;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* bottom nav */
+.social-nav {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #bae8e8;
+}
+.social-nav li {
+  list-style: none;
+  padding: 10px;
+}
+
+.social-nav li a {
+  cursor: pointer;
+  color: #272343;
+}
+
+/* image slider */
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 82vh;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  right: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(227, 246, 245, 0.8);
+  color: #272343;
+  padding: 35px;
+  text-align: right;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid white;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: white;
+  color: #333;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+/* about section */
+.about {
+  width: 100%;
+  padding: 4rem;
+  background-color: #e3f6f5;
+}
+.about p {
+  text-align: right;
+}
+.about h1 {
+  text-align: center;
+}
+.contact {
+  margin: 1rem;
+  text-align: center;
+  font-size: x-large;
+}
+.contact a {
+  padding: 5px;
+  border: solid #333;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.contact a:hover {
+  background-color: #bae8e8;
+}
+
+/* instagram section */
+.instagram {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+}
+.instaImage {
+  margin: auto;
+  height: auto;
+}
+
+/* mobile view */
+@media (max-width: 500px) {
+  .slide .content {
+    /* bottom: -300px; */
+    bottom: 0;
+    width: 100%;
+    font-size: smaller;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .slide .content h1 {
+    font-size: small;
+  }
+  .buttons button#next {
+    top: 50%;
+  }
+  .buttons button#prev {
+    top: 50%;
+  }
+
+  .slider {
+    height: 60vh;
+  }
+  .slide {
+    width: 100%;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: small;
+  }
+  .logo img {
+    margin: 5px;
+    width: 4rem;
+    border-radius: 50%;
+  }
+}
+
+/* footer */
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
+  text-align: end;
+  margin-right: 5px;
+}
+
+/* images links */
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(-600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.slide:first-child {
+  background: url('./images/IMG_6593.jpg') no-repeat center center/cover;
+}
+.slide:nth-child(2) {
+  background: url('./images/IMG_20200430_162658.jpg') no-repeat center
+    center/cover;
+}
+.slide:nth-child(3) {
+  background: url('./images/IMG_5999.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(4) {
+  background: url('./images/IMG_6319.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(5) {
+  background: url('./images/IMG_6231.jpg') no-repeat center center/cover;
+}
