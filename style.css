@@ -60,7 +60,7 @@ body {
   .lang a {
     font-size: 18px;
   }
-.logo  h2 {
+  .logo h2 {
     font-size: small;
   }
 }
@@ -71,7 +71,7 @@ body {
   background-color: #e3f6f5;
   margin: auto;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 .social-nav li {
   list-style: none;
@@ -167,7 +167,7 @@ body {
 /* about section */
 .about {
   width: 100%;
-  padding: 4rem;
+  padding: 3rem;
   background-color: #e3f6f5;
 }
 .about h1 {
@@ -178,14 +178,15 @@ body {
   text-align: center;
   font-size: x-large;
 }
-.contact a {
+.contact-btn {
+  margin: 10px;
   padding: 5px;
   border: solid #333;
   border-radius: 15px;
   background-color: whitesmoke;
 }
 
-.contact a:hover {
+.contact-btn:hover {
   background-color: #bae8e8;
 }
 
@@ -202,7 +203,6 @@ body {
   margin: auto;
   height: auto;
 }
-
 
 /* footer */
 footer {

@@ -20,51 +20,63 @@ body {
 }
 
 /* top nav bar */
-nav {
+.top-nav {
   width: 100%;
-}
-h2 {
-  width: 100%;
-  text-align: center;
-}
-.logo {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
   justify-content: center;
 }
-.logo img {
-  margin: 5px;
-  width: 8rem;
-  border-radius: 50%;
-}
-
-.lang {
+.logo {
+  margin-top: 10px;
   display: flex;
-  margin: 15px;
-  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.lang li {
+.logo-image img {
+  width: 8rem;
+}
+.logo-image {
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+.logo h2 {
+  text-align: center;
+}
+.lang {
+  width: min-content;
+  list-style: none;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.lang a {
   margin: 10px;
   margin-bottom: 0;
-  font-size: 25px;
+  font-size: 24px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media (max-width: 500px) {
+  .lang a {
+    font-size: 18px;
+  }
+  .logo h2 {
+    font-size: small;
+  }
 }
 
 /* bottom nav */
 .social-nav {
+  width: 100%;
+  background-color: #e3f6f5;
   margin: auto;
   display: flex;
-  width: 100%;
   justify-content: center;
-  background-color: #bae8e8;
 }
 .social-nav li {
   list-style: none;
   padding: 10px;
 }
-
 .social-nav li a {
   cursor: pointer;
   color: #272343;
@@ -135,53 +147,8 @@ h2 {
 .slide .content h1 {
   margin-bottom: 10px;
 }
-/* about section */
-.about {
-  width: 100%;
-  padding: 4rem;
-  background-color: #e3f6f5;
-}
-.about p {
-  text-align: right;
-}
-.about h1 {
-  text-align: center;
-}
-.contact {
-  margin: 1rem;
-  text-align: center;
-  font-size: x-large;
-}
-.contact a {
-  padding: 5px;
-  border: solid #333;
-  border-radius: 15px;
-  background-color: whitesmoke;
-  padding: 10px;
-}
-
-.contact a:hover {
-  background-color: #bae8e8;
-}
-
-/* instagram section */
-.instagram {
-  width: 100%;
-  padding: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  overflow: auto;
-}
-.instaImage {
-  margin: auto;
-  height: auto;
-}
-
-/* mobile view */
 @media (max-width: 500px) {
   .slide .content {
-    /* bottom: -300px; */
     bottom: 0;
     width: 100%;
     font-size: smaller;
@@ -204,24 +171,59 @@ h2 {
   .slide {
     width: 100%;
   }
-  h2 {
-    width: 100%;
-    text-align: center;
-    font-size: small;
-  }
-  .logo img {
-    margin: 5px;
-    width: 4rem;
-    border-radius: 50%;
-  }
+}
+/* about section */
+.about {
+  width: 100%;
+  padding: 4rem;
+  background-color: #e3f6f5;
+}
+.about p {
+  text-align: right;
+}
+.about h1 {
+  text-align: center;
+}
+.contact {
+  margin: 1rem;
+  text-align: center;
+  font-size: x-large;
+}
+.contact-btn {
+  margin: 10px;
+  padding: 5px;
+  border: solid #333;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.contact-btn:hover {
+  background-color: #bae8e8;
+}
+
+/* instagram section */
+.instagram {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+}
+.instaImage {
+  margin: auto;
+  height: auto;
 }
 
 /* footer */
 footer {
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: x-small;
-  text-align: end;
+  text-align: center;
   margin-right: 5px;
+  background-color: #e3f6f5;
 }
 
 /* images links */

@@ -43,9 +43,10 @@ prev.addEventListener('click', () => {
   }
 });
 
+//for auto play gallery slider
 if (auto) {
   slideInterval = setInterval(nextSlide, intervalTime);
 }
 
 //disable right-click
-document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', (event) => event.preventDefault());
