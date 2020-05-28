@@ -46,3 +46,6 @@ prev.addEventListener('click', () => {
 if (auto) {
   slideInterval = setInterval(nextSlide, intervalTime);
 }
+
+//disable right-click
+document.addEventListener('contextmenu', event => event.preventDefault());
