@@ -12,6 +12,7 @@ a {
 }
 
 body {
+  direction: rtl;
   font-family: 'Balsamiq Sans', cursive;
   background-color: #fafaf6;
   color: #272343;
@@ -196,6 +197,7 @@ body {
   border-radius: 15px;
   background-color: whitesmoke;
   padding: 10px;
+  font-size: large;
 }
 
 .contact-btn:hover {
